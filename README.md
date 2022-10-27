@@ -43,15 +43,23 @@ We use __Regression__ in order to predict the **Hourly Bike Rental Demands acros
 - Print the head of the data.
 - `'count'` is indentified as the Target Variable.
 - Distribution of `'count'` is plotted.
+
 ![count_dist](https://github.com/navi1910/BikeRentalDemand-dt-regressor-model/blob/master/count_dist.png 'count_dist')
+
 - Since `'count'` is skewed log transformation is applied and then plotted.
+
 ![count_transformed](https://github.com/navi1910/BikeRentalDemand-dt-regressor-model/blob/master/count_dist_transformed.png 'count_transformed')
+
 - The basic `info` is checked.
 - Heatmap is plotted to check the correlation among the variables.
+
 ![heatmap](https://github.com/navi1910/BikeRentalDemand-dt-regressor-model/blob/master/heatmap.png 'heatmap')
+
 - The correlation between `'atemp'` and `'count'` is ignorable. Hence, `'atemp'` is dropped.
 - Another heatmap with annotations is plotted for the attributes.
+
 ![heatmap_annot](https://github.com/navi1910/BikeRentalDemand-dt-regressor-model/blob/master/heatmap_with_annot.png 'heatmap_annot')
+
 - Feature Engineering on `'datetime'` is done to extract `'date'` and `'hour'`.
 - The data is divided into Training and Validation Set.
 - The independent and dependent variables are separated for both Training and Validation sets.
